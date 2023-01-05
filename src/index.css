@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Pacifico&family=Quicksand:wght@400;600&display=swap');
+
+body {
+  font-family: 'Quicksand', Helvetica, sans-serif;
+  color: white;
+  background-color: #28574c;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+
+.header {
+  background-color: #ffc77e;
+}
+
+.header #title {
+  color: #0065d1;
+  font-family: 'Pacifico';
+  font-size: 7vh;
+  text-align: center;
+  margin-bottom: 1vh;
+}
+
+.header #phrase {
+  color: #823a19;
+  font-family: 'Caveat';
+  font-size: 4vh;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* Navbar */
+
+.nav {
+  display: flex;
+  overflow: hidden;
+  height: 6vh;
+  background-color: #00abea;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav a {
+  color: #f8f8f8;
+  font-size: 2.8vh;
+  text-align: center;
+  vertical-align: middle;
+  padding: 3vh;
+  margin: 0;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: #e69c3d;
+  color: #f8f8f8;
+}
+
+.nav #left-align {
+  margin-left: auto;
+}
+
+/* Footer */
+
+.footer img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+
+/*** Card Hover Effect ***/
+
+@media (hover: hover) {
+  /*setting the properties of
+  content within the image*/
+  .content {
+      position: relative;
+      width: 100%;
+      margin: auto;
+      overflow: hidden;
+  }
+  /* rgb(0,0,0) indicates black and
+      the fourth parameter is the opacity */
+  .content .content-overlay {
+      /*setting 0.8 to 1 will turn the overlay opaque*/
+      background: rgba(0, 0, 0, 0.7);
+      position: absolute;
+      height: auto;
+      width: 100%;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      opacity: 0;
+      /*transition time and effect*/
+      -webkit-transition: all 0.4s ease-in-out 0s;
+      /*transition time and effect*/
+      -moz-transition: all 0.4s ease-in-out 0s;
+      /*transition time and effect*/
+      transition: all 0.4s ease-in-out 0s;
+  }
+  /* setting hover properties */
+  .content:hover .content-overlay {
+      opacity: 1;
+  }
+  .content-image {
+      width: 100%;
+  }
+  .content-details {
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      opacity: 0;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      /*transition time and effect*/
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      /*transition time and effect*/
+      -moz-transition: all 0.3s ease-in-out 0s;
+      /*transition time and effect*/
+      transition: all 0.3s ease-in-out 0s;
+  }
+  .content:hover .content-details {
+      top: 50%;
+      left: 50%;
+      opacity: 1;
+  }
+}
+
+@media (hover: none) {
+  /*setting the properties of content within the image*/
+  .content {
+      position: relative;
+      width: 100%;
+      margin: auto;
+      overflow: hidden;
+  }
+  /* rgb(0,0,0) indicates black and the fourth parameter is the opacity */
+  .content .content-overlay {
+      /*setting 0.8 to 1 will turn the overlay opaque*/
+      background: rgba(0, 0, 0, 0.7);
+      position: absolute;
+      height: auto;
+      width: 100%;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      opacity: 0.6;
+  }
+  .content-image {
+      width: 100%;
+  }
+  .content-details {
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      opacity: 1;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  }
+}
