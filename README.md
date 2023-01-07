@@ -2,7 +2,8 @@
 
 ### `npm install`
 node_modules is ignored in .gitignore because it is too large.\
-So, run npm install to install it when you pull from Github.
+So, run npm install to install it when you pull from Github.\
+Or, can you run just `?
 
 ### `npm start`
 
