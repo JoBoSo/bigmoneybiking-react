@@ -1,12 +1,12 @@
-import Header from './Header';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Header from './components/Header';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import BikeTours from './BikeTours';
-import BikeTour from './BikeTour';
-import Hikes from './Hikes';
-import Blog from './Blog';
-import Subscribe from './Subscribe';
+import BikeTours from './components/BikeTours';
+import BikeTour from './components/BikeTour';
+import Hikes from './components/Hikes';
+import Blog from './components/Blog';
+import Subscribe from './components/Subscribe';
 
 function App() {
   return (

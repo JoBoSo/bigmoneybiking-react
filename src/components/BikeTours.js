@@ -1,5 +1,5 @@
 import CardGrid from './CardGrid';
-import useFetch from './useFetch';
+import useFetch from '../hooks/useFetch';
 
 function BikeTours() {
   const {data: tours, isLoading, error} = useFetch('http://localhost:3001/bike_tours');
