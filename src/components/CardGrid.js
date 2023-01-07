@@ -14,7 +14,7 @@ const CardGrid = ({cards}) => {
               <Link to={`/${card.id}`}>
                 <div className="card-content">
                   <div className="overlay"></div>
-                  <Card.Img className="image img-fluid corners" src={require("../images/to-mtrl/IMG_4290.JPG")} />
+                  <img className="image img-fluid corners" src={require(`../${card.image}`)} loading="lazy" />
                   <div className="details">
                     <Card.Title className="title">
                       {card.title}

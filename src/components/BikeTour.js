@@ -1,10 +1,11 @@
 import { Row } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
+import UncontrolledCarousel from "./Carousel";
 
 const BikeTour = () => {
   const {id} = useParams();
-  const {data: tour, error, isLoading} = useFetch('http://localhost:3001/bike_tours/' + id);
+  const {data: tour, error, isLoading} = useFetch('http://localhost:3100/bike_tours/' + id);
 
   return (
     <div className="bike-tour">
@@ -21,6 +22,10 @@ const BikeTour = () => {
               <b> Days: </b>{tour.days} | 
               <b> Dates: </b>{tour.dates}
             </p>
+          </Row>
+
+          <Row>
+            {/* <UncontrolledCarousel /> */}
           </Row>
 
           <Row className="g-0">
