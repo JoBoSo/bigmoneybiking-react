@@ -1,0 +1,158 @@
+{
+  "bike_tours": [
+    {
+      "title": "Montreal to Sherbrooke",
+      "subtitle": "Via La Route Verte",
+      "image": "images/mtrl-sherbrooke/IMG_2710.jpg",
+      "id": "mtrl-sherbrooke",
+      "distance": "399 km",
+      "days": 3,
+      "dates": "Sept 16-18, 2022",
+      "map_link": "https://www.google.com/maps/d/u/0/embed?mid=1LXIoUPHSX6sVgbJxS4MRbDNSeMoRc3c&ehbc=2E312F",
+      "report": ""
+    },
+    {
+      "title": "P'tit Train du Nord",
+      "subtitle": "Once a Railway for Ski Trains",
+      "image": "images/ptit-train/IMG_2551.jpg",
+      "id": "ptit-train",
+      "distance": "316 km",
+      "days": 3,
+      "dates": "Aug 12-15, 2022",
+      "map_link": "https://www.google.com/maps/d/u/0/embed?mid=1VJNTSZyRypR02pVd6nGhmGGHv_c3gy8&ehbc=2E312F",
+      "report": ""
+    },
+    {
+      "title": "Haida Gwaii",
+      "subtitle": "A Magical Pacific Island",
+      "image": "images/haida-gwaii/IMG_0834.jpg",
+      "id": "haida-gwaii",
+      "distance": "185 km",
+      "days": 3,
+      "dates": "Aug 12-14, 2021",
+      "map_link": "https://www.google.com/maps/d/u/0/embed?mid=1zgLwCjrewa7yOP0tJ_QADu9LfCEJ6IA&ehbc=2E312F",
+      "report": ""
+    },
+    {
+      "title": "Nisga'a",
+      "subtitle": "A Volcanic Landscape",
+      "image": "images/nass-valley/IMG_9730.jpg",
+      "id": "nass-valley",
+      "distance": "474 km",
+      "days": 4,
+      "dates": "May 19-22, 2021",
+      "map_link": "https://www.google.com/maps/d/u/0/embed?mid=1N0BMBnvfyKtvfPEHPh0i5bRzNWGOl0U&ehbc=2E312F",
+      "report": ""
+    },
+    {
+      "title": "Babine Lake",
+      "subtitle": "BC's Longest Lake",
+      "image": "images/babine-lake/IMG_9504.jpg",
+      "id": "babine-lake",
+      "distance": "222 km",
+      "days": 2,
+      "dates": "May 8-9, 2021",
+      "map_link": "https://www.google.com/maps/d/u/0/embed?mid=1GiywlimP6jG8_hqfdW9YYAsgZ5GGwvk&ehbc=2E312F",
+      "report": ""
+    },
+    {
+      "title": "Downie Creek",
+      "subtitle": "A Ride Along the Columbia River",
+      "image": "images/downie-creek/IMG_8505.JPG",
+      "id": "downie-creek",
+      "distance": "158 km",
+      "days": 3,
+      "dates": "Oct 3-5, 2020",
+      "map_link": "https://www.google.com/maps/d/u/0/embed?mid=17dqZEY2G0OWZBmriEmpmWO6g3cCAOBI&ehbc=2E312F",
+      "report": ""
+    },
+    {
+      "title": "Begbie Falls",
+      "subtitle": "Heavenly Revelstoke",
+      "image": "images/begbie-falls/superman-clara.JPG",
+      "id": "begbie-falls",
+      "distance": "",
+      "days": 2,
+      "dates": "Sept 26-27, 2020",
+      "map_link": "https://www.google.com/maps/d/u/0/embed?mid=1ffp5cHfujFu7V7znqWR-G2gpcjPl57A&ehbc=2E312F",
+      "report": ""
+    },
+    {
+      "title": "Quadra & Cortes",
+      "subtitle": "Psychedelic Sailors",
+      "image": "images/quadra-cortes/IMG_6877.JPG",
+      "id": "quadra-cortes",
+      "distance": "254 km",
+      "days": 3,
+      "dates": "Aug 1-3, 2020",
+      "map_link": "https://www.google.com/maps/d/u/0/embed?mid=1RpB7QpPtamUp435SgbW_wTM7Ex3kSS8&ehbc=2E312F",
+      "report": ""
+    },
+    {
+      "title": "Comox Lake",
+      "subtitle": "Tucked Behind the Comox Valley",
+      "image": "images/comox-lake/IMG_6328.JPG",
+      "id": "comox-lake",
+      "distance": "80 km",
+      "days": 2,
+      "dates": "July 4-5, 2020",
+      "map_link": "https://www.google.com/maps/d/u/0/embed?mid=1BpQIN6SnObNo_0d7jkImCtMpCI9bRnE&ehbc=2E312F",
+      "report": ""
+    },
+    {
+      "title": "Texada Island",
+      "subtitle": "The Largest Island in the Strait of Georgia",
+      "image": "images/texada/IMG_5873.JPG",
+      "id": "texada",
+      "distance": "195 km",
+      "days": 4,
+      "dates": "June 12-15, 2020",
+      "map_link": "https://www.google.com/maps/d/u/0/embed?mid=106wwL9ELevtJLC0_zcI23w6hlv7CzlI&ehbc=2E312F",
+      "report": ""
+    },
+    {
+      "title": "Brewster & Campbell Lakes",
+      "subtitle": "Peace on the water",
+      "image": "images/brewster-lake/IMG_5594.JPG",
+      "id": "brewster-lake",
+      "distance": "165 km",
+      "days": 3,
+      "dates": "May 28-30, 2020",
+      "map_link": "https://www.google.com/maps/d/u/0/embed?mid=1Juuj4fXtX0Yr569TceTUeuUifm780MQ&ehbc=2E312F",
+      "report": ""
+    },
+    {
+      "title": "North Vancouver Island",
+      "subtitle": "All Paths Lead to a Beach",
+      "image": "images/san-josef-bay/IMG_5485.JPG",
+      "id": "san-josef-bay",
+      "distance": "713 km",
+      "days": 8,
+      "dates": "May 14-21, 2020",
+      "map_link": "https://www.google.com/maps/d/u/0/embed?mid=1FD9t09RTr4pPd4YAO6ks995gsM_MCg0&ehbc=2E312F",
+      "report": ""
+    },
+    {
+      "title": "Nanaimo to Courtenay",
+      "subtitle": "Via Logging Roads",
+      "image": "images/nanaimo-courtenay/IMG_5149.JPG",
+      "id": "nanaimo-courtenay",
+      "distance": "178 km",
+      "days": 2,
+      "dates": "May 6-7, 2020",
+      "map_link": "https://www.google.com/maps/d/u/0/embed?mid=1d67GwzoVK8FRzqz3RFWVm5aGYth4-VU&ehbc=2E312F",
+      "report": ""
+    },
+    {
+      "title": "Schomberg to Montreal",
+      "subtitle": "Riding the Waterfront Trail",
+      "image": "images/to-mtrl/IMG_4290.JPG",
+      "id": "to-mtrl",
+      "distance": "615 km",
+      "days": 6,
+      "dates": "Aug 16-21, 2019",
+      "map_link": "https://www.google.com/maps/d/u/0/embed?mid=1XuTBbBZ4atnQiUkwiHpvshf5EYXXuUQ&ehbc=2E312F",
+      "report": ""
+    }
+  ]
+}

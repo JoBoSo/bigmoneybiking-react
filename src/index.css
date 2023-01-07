@@ -48,7 +48,8 @@ body {
   text-align: center;
   vertical-align: middle;
   padding: 3vh;
-  margin: 0;
+  margin-top: -3vh;
+  margin-bottom: -3vh;
   text-decoration: none;
 }
 
@@ -67,23 +68,24 @@ body {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 10%;
+  height: 10vh;
 }
 
-/*** Card Hover Effect ***/
+/*** Card Content and Hover Effect ***/
 
 @media (hover: hover) {
   /*setting the properties of
   content within the image*/
-  .content {
+  .card-content {
       position: relative;
       width: 100%;
       margin: auto;
       overflow: hidden;
+      border-radius: 7px;
   }
   /* rgb(0,0,0) indicates black and
       the fourth parameter is the opacity */
-  .content .content-overlay {
+  .card-content .overlay {
       /*setting 0.8 to 1 will turn the overlay opaque*/
       background: rgba(0, 0, 0, 0.7);
       position: absolute;
@@ -102,13 +104,13 @@ body {
       transition: all 0.4s ease-in-out 0s;
   }
   /* setting hover properties */
-  .content:hover .content-overlay {
+  .card-content:hover .overlay {
       opacity: 1;
   }
-  .content-image {
+  .card-content .image {
       width: 100%;
   }
-  .content-details {
+  .card-content .details {
       position: absolute;
       text-align: center;
       width: 100%;
@@ -125,23 +127,31 @@ body {
       /*transition time and effect*/
       transition: all 0.3s ease-in-out 0s;
   }
-  .content:hover .content-details {
+  .card-content:hover .details {
       top: 50%;
       left: 50%;
       opacity: 1;
+  }
+  .card-content .details .title {
+    font-size: 4vh;
+    color: white;
+  }
+  .card-content .details .subtitle {
+    font-size: 3vh;
+    color: white;
   }
 }
 
 @media (hover: none) {
   /*setting the properties of content within the image*/
-  .content {
+  .card-content {
       position: relative;
       width: 100%;
       margin: auto;
       overflow: hidden;
   }
   /* rgb(0,0,0) indicates black and the fourth parameter is the opacity */
-  .content .content-overlay {
+  .card-content .overlay {
       /*setting 0.8 to 1 will turn the overlay opaque*/
       background: rgba(0, 0, 0, 0.7);
       position: absolute;
@@ -153,10 +163,10 @@ body {
       right: 0;
       opacity: 0.6;
   }
-  .content-image {
+  .card-content .image {
       width: 100%;
   }
-  .content-details {
+  .card-content .details {
       position: absolute;
       text-align: center;
       width: 100%;
@@ -167,4 +177,34 @@ body {
       -moz-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
   }
+  .card-content .details .title {
+    font-size: 4vh;
+    color: white;
+  }
+  .card-content .details .subtitle {
+    font-size: 3vh;
+    color: white;
+  }
+}
+
+/* Card Margin */
+
+.card-margin {
+  margin: 5px;
+}
+
+.card-corners {
+  border-radius: 7px;
+}
+
+/* Touring page header */
+
+.tour-title {
+  text-align: center;
+  margin: 0;
+}
+
+.stats-bar {
+  text-align: center;
+  vertical-align: middle;
 }
