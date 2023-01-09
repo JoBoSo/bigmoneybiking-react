@@ -1,9 +1,8 @@
 # Big Money Biking React App
 
 ### `npm install`
-node_modules is ignored in .gitignore because it is too large.\
-So, run npm install to install it when you pull from Github.\
-Or, can you run just `?
+node_modules is in .gitignore.\
+So, run npm install to install it after pulling.\
 
 ### `npm start`
 
