@@ -11,10 +11,10 @@ const CardGrid = ({cards}) => {
         {cards.map((card) => (
           <Col key={card.title}>
             <Card className="border-0 card-margin card-corners">
-              <Link to={`/${card.id}`}>
+              <Link to={`/${card.bike_tour}`}>
                 <div className="card-content">
                   <div className="overlay"></div>
-                  <img className="image img-fluid corners" src={require(`../${card.image}`)} loading="lazy" />
+                  <img className="image img-fluid corners" src={`http://127.0.0.1:8000/${card.image}`} loading="lazy" />
                   <div className="details">
                     <Card.Title className="title">
                       {card.title}

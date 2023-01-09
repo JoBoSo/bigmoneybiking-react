@@ -2,13 +2,13 @@ import CardGrid from './CardGrid';
 import useFetch from '../hooks/useFetch';
 
 function BikeTours() {
-  const {data: tours, isLoading, error} = useFetch('http://localhost:3100/bike_tours');
+  const {data: cards, isLoading, error} = useFetch('http://127.0.0.1:8000/api/bike_tour_cards/');
 
   return (
     <div>
       {isLoading && <div>Loading...</div>}
       {error && <div>{error}</div>}
-      {tours && <CardGrid cards={tours} />}
+      {cards && <CardGrid cards={cards} />}
     </div>
   );
 }

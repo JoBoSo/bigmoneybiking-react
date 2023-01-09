@@ -1,26 +1,25 @@
-import { Row } from "react-bootstrap";
+import { Row, Container } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 import UncontrolledCarousel from "./Carousel";
 
 const BikeTour = () => {
   const {id} = useParams();
-  const {data: tour, error, isLoading} = useFetch('http://localhost:3100/bike_tours/' + id);
+  const {data: tour} = useFetch('http://127.0.0.1:8000/api/bike_tours/' + id);
+  const {data: page} = useFetch('http://127.0.0.1:8000/api/bike_tour_pages/' + id);
 
   return (
     <div className="bike-tour">
-      {isLoading && <div>Loading...</div>}
-      {error && <div>{error}</div>}
       {
         tour && 
-        <article>
+        <Container>
           
           <Row className="g-0">
-            <h1 className="tour-title">{tour.title}</h1>
+            <h1 className="tour-title">{page.title}</h1>
             <p className="stats-bar">
-              <b>Distance: </b>{tour.distance} | 
+              <b>Distance: </b>{tour.distance_km}km | 
               <b> Days: </b>{tour.days} | 
-              <b> Dates: </b>{tour.dates}
+              <b> Dates: </b>{tour.start_date} {tour.end_date}
             </p>
           </Row>
 
@@ -30,11 +29,15 @@ const BikeTour = () => {
 
           <Row className="g-0">
             <div>
-              <iframe src={tour.map_link} width="100%" height="480"></iframe>
+              <iframe src={page.map_url} width="100%" height="480"></iframe>
             </div>
           </Row>
 
-        </article>
+          <Row>
+            {page.report}
+          </Row>
+
+        </Container>
       }
     </div>
   );
